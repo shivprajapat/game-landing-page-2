@@ -3,7 +3,7 @@ import React from "react";
 const WinnersCard = ({ title, imageUrl, description, location }) => {
   return (
     <div className="card relative bg-white shadow-md rounded-lg z-10 overflow-hidden before:absolute before:-z-10 before:-top-4 before:-right-4 before:size-8 before:rounded-4xl before:scale-100 before:bg-primary hover:border-primary ">
-      <div className="flex gap-4 items-start p-4">
+      <div className="flex flex-col gap-4 items-start p-4">
         <img
           src={imageUrl}
           alt="Team Member 1"

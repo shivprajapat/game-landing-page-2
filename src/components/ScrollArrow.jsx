@@ -50,7 +50,7 @@ const ScrollArrow = () => {
         <circle
           fill="transparent"
           r={radius}
-          stroke="#fff"
+          stroke="#000"
           strokeWidth="3"
           cx="25"
           cy="25"
@@ -66,7 +66,7 @@ const ScrollArrow = () => {
           x="50%"
           y="55%"
           textAnchor="middle"
-          fill="#fff"
+          fill="#000"
           fontSize="18"
           dy=".1em"
         >

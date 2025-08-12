@@ -204,7 +204,9 @@ button {
 .download__btn {
   box-shadow: 0 3px 0.5px #e79021bf;
 }
-
+.download__btn img {
+  filter: brightness(0);
+}
 .enjoy-language-bg::before {
   background: url("./assets/images/language-bg.png");
   @apply bg-cover;
