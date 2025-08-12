@@ -93,7 +93,7 @@ const Footer = () => {
         </marquee>
       </div>
       <div className="max-w-7xl mx-4 xl:mx-auto">
-        <div className="flex items-center gap-2 justify-center text-center flex-wrap text-base text-gray font-urbanist font-normal text-white">
+        <div className="flex items-center gap-2 justify-center text-center flex-wrap text-sm sm:text-base text-gray font-urbanist font-normal text-white">
           <p className=" text-white">
             © {new Date().getFullYear()},
             <a
@@ -109,16 +109,16 @@ const Footer = () => {
       </div>
       {isMobile && (
         <div
-          className={`fixed lef-0 w-full px-4 z-50 duration-1000 transition-all ${
+          className={`fixed left-0 w-full px-4 z-50 duration-1000 transition-all ${
             showDownloadButton
               ? "bottom-6 translate-y-0"
               : "-bottom-10 translate-y-full"
           }`}
         >
           <button className="download__btn bg-primary text-black w-full rounded-md uppercase italic px-3 py-3 text-lg font-semibold flex-center gap-2 animate-bounce">
-            <img src={iconAndroid} alt="" width={26} height={26} />
+            <img src={iconAndroid} alt="" width={24} height={24} />
             <span> Get Download Link</span>
-            <img src={iconDownload} alt="" width={26} height={26} />
+            <img src={iconDownload} alt="" width={24} height={24} />
           </button>
         </div>
       )}

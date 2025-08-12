@@ -30,25 +30,22 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 border-b-2  transition-all duration-200 ${
+      className={`fixed top-0 w-full z-50 border-b-2 transition-all duration-200 ${
         show ? " bg-black border-primary shadow" : "border-transparent"
       }`}
     >
       <div className="container">
         <nav className="w-full flex py-2 sm:py-3 justify-between items-center">
-          <a href="#" data-aos="fade-down">
+          <a href="#">
             <img
               src={iconLogo}
               alt="logo"
               className={`transition-all duration-200 ${
-                show ? "sm:w-14 w-16" : "sm:w-14 w-16 md:w-20"
+                show ? "sm:w-12 w-16" : "sm:w-12 w-16 md:w-20"
               }`}
             />
           </a>
-          <ul
-            className="list-none transition-all duration-200 gap-5 lg:gap-10 xl:gap-14 lg:flex hidden justify-end items-center"
-            data-aos="fade-down"
-          >
+          <ul className="list-none transition-all duration-200 gap-5 lg:gap-10 xl:gap-14 lg:flex hidden justify-end items-center">
             {navLinks.map((nav) => (
               <li
                 key={nav.id}
@@ -71,7 +68,7 @@ const Header = () => {
                       <path
                         d="M0.994141 7C8.66081 3 27.3941 -2.6 40.9941 7"
                         stroke="#a6d719"
-                        stroke-width="3"
+                        strokeWidth="3"
                       ></path>
                     </svg>
                   )}
@@ -80,10 +77,7 @@ const Header = () => {
             ))}
           </ul>
           <div className="flex gap-3 flex-1 lg:flex-none justify-end items-center">
-            <div
-              className="flex items-center gap-2 sm:gap-3"
-              data-aos="fade-down"
-            >
+            <div className="flex items-center gap-2 sm:gap-3">
               <div className="sm:inline-block hidden">
                 <Button>Download</Button>
               </div>
@@ -91,7 +85,7 @@ const Header = () => {
                 <Button>Login</Button>
               </a>
             </div>
-            <div className="sm:hidden flex justify-end items-center">
+            <div className="md:hidden flex justify-end items-center">
               <button className="size-10 border border-primary flex-center">
                 <img
                   src={toggle ? iconClose : iconMenu}
@@ -105,7 +99,7 @@ const Header = () => {
               <div
                 className={`${
                   !toggle ? "hidden" : "flex"
-                } p-6 bg-black absolute top-[70px] right-0 mx-4 min-w-[140px] rounded-xl animation-slide-top z-[1]`}
+                } p-6 bg-black absolute top-[70px] right-0 mx-4 min-w-[140px] rounded-xl animation-slide-top z-[9]`}
               >
                 <ul className="list-none flex justify-end items-start flex-1 flex-col">
                   {navLinks.map((nav, index) => (

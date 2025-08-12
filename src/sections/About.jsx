@@ -11,9 +11,9 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center-safe">
           <div
             data-aos="fade-right"
-            data-aos-anchor="#example-anchor"
-            data-aos-offset="500"
-            data-aos-duration="2000"
+            // data-aos-anchor="#example-anchor"
+            // data-aos-offset="500"
+            // data-aos-duration="2000"
           >
             <Heading className="text-left justify-center sm:justify-start !mb-5">
               About Us

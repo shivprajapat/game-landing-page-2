@@ -22,19 +22,19 @@ const EnjoyGames = () => {
             </div>
           </Heading>
         </div>
-        <div class="flex flex-wrap justify-center mx-auto lg:w-full md:w-5/6">
+        <div className="flex flex-wrap justify-center mx-auto lg:w-full md:w-5/6">
           {enjoyGamesSliderData.map((item, index) => (
             <div
               key={index}
               className=" w-1/2 py-4 sm:py-7 text-center border lg:w-1/4 border-white group"
             >
-              <div class="block size-32 sm:size-56 mx-auto rounded-full object-cover border-2 border-primary p-2 shadow">
+              <div className="block size-32 sm:size-56 mx-auto rounded-full object-cover border-2 border-primary p-2 shadow">
                 <img
                   src={item.videoPoster}
-                  class="size-full group-hover:scale-110 transition-all duration-300 rounded-full"
+                  className="size-full group-hover:scale-110 transition-all duration-300 rounded-full"
                 />
               </div>
-              <p class="pt-4 text-sm font-medium capitalize font-body text-primary lg:text-lg md:text-base md:pt-6">
+              <p className="pt-4 text-sm font-medium capitalize font-body text-primary lg:text-lg md:text-base md:pt-6">
                 portfolio
               </p>
             </div>

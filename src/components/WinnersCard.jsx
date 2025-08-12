@@ -7,11 +7,11 @@ const WinnersCard = ({ title, imageUrl, description, location }) => {
         <img
           src={imageUrl}
           alt="Team Member 1"
-          class="size-24 border-2 shadow border-primary p-1 rounded-full"
+          className="size-24 border-2 shadow border-primary p-1 rounded-full"
         />
         <div>
-          <h3 class="text-xl font-medium text-black mb-2">{title}</h3>
-          <p class="text-gray-700 text-sm">{description}</p>
+          <h3 className="text-xl font-medium text-black mb-2">{title}</h3>
+          <p className="text-gray-700 text-sm">{description}</p>
         </div>
       </div>
 

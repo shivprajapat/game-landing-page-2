@@ -12,6 +12,9 @@
 button {
   clip-path: polygon(0 0, 93% 0, 100% 30%, 100% 100%, 7% 100%, 0 70%);
 }
+html {
+  @apply overflow-x-hidden;
+}
 @layer base {
   body {
     @apply bg-[#12151f] text-white;

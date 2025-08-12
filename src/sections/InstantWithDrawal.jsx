@@ -9,7 +9,7 @@ const InstantWithDrawal = () => {
         <div className="p-7 bg-[#171926] border border-white">
           <div data-aos="fade-up"></div>
           <Heading className="justify-center">Withdrawal Modes</Heading>
-          <div data-aos="fade-up" data-aos-duration="1000">
+          <div data-aos="fade-up">
             <img
               src={ImagePayments}
               alt="payments"

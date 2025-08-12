@@ -25,18 +25,18 @@ const Banner = () => {
                 </h1>
               </div>
               <div>
-                <ul className="flex flex-row sm:gap-[8px] gap-4 justify-start items-stretch">
+                <ul className="flex flex-wrap sm:flex-row sm:gap-[8px] gap-4 justify-start items-stretch">
                   <li className="text-center flex items-center">
                     <div>
-                      <span className="text-sm sm:text-lg font-bold text-primary block">
+                      <span className="text-xs sm:text-lg font-bold text-primary block">
                         80M+
                       </span>
-                      <span className="text-xs sm:text-base font-normal text-white">
+                      <span className="text-[10px] sm:text-base font-normal text-white">
                         DOWNLOADS
                       </span>
                     </div>
                     <svg
-                      class="mx-2 sm:mx-4"
+                      className="mx-2.5 sm:mx-4"
                       xmlns="http://www.w3.org/2000/svg"
                       width="2"
                       height="45"
@@ -46,23 +46,23 @@ const Banner = () => {
                       <path
                         d="M1.33105 0.771484L1.33105 43.6905"
                         stroke="#A8A8A8"
-                        stroke-width="0.841549"
-                        stroke-linecap="round"
+                        strokeWidth="0.841549"
+                        strokeLinecap="round"
                       ></path>
                     </svg>
                   </li>
 
                   <li className="text-center flex items-center">
                     <div>
-                      <span className="text-sm sm:text-lg font-bold text-primary block">
+                      <span className="text-xs sm:text-lg font-bold text-primary block">
                         80M+
                       </span>
-                      <span className="text-xs sm:text-base font-normal text-white">
+                      <span className="text-[10px] sm:text-base font-normal text-white">
                         DOWNLOADS
                       </span>
                     </div>
                     <svg
-                      class="mx-2 sm:mx-4"
+                      className="mx-2.5 sm:mx-4"
                       xmlns="http://www.w3.org/2000/svg"
                       width="2"
                       height="45"
@@ -72,18 +72,18 @@ const Banner = () => {
                       <path
                         d="M1.33105 0.771484L1.33105 43.6905"
                         stroke="#A8A8A8"
-                        stroke-width="0.841549"
-                        stroke-linecap="round"
+                        strokeWidth="0.841549"
+                        strokeLinecap="round"
                       ></path>
                     </svg>
                   </li>
 
                   <li className="text-center">
                     <div>
-                      <span className="text-sm sm:text-lg font-bold text-primary block">
+                      <span className="text-xs sm:text-lg font-bold text-primary block">
                         80M+
                       </span>
-                      <span className="text-xs sm:text-base font-normal text-white">
+                      <span className="text-[10px] sm:text-base font-normal text-white">
                         DOWNLOADS
                       </span>
                     </div>

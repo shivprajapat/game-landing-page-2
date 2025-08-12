@@ -7,12 +7,12 @@ const Winners = () => {
   return (
     <section className="py-5 md:py-8">
       <div className="max-w-7xl px-4 mx-auto">
-        <div data-aos="fade-up" data-aos-duration="1000">
+        <div data-aos="fade-up">
           <Heading className="justify-center">
             Online money game reviews
           </Heading>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {winnersData.map((item, index) => (
             <div key={index}>
               <WinnersCard {...item} />
