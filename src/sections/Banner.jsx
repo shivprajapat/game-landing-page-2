@@ -19,11 +19,7 @@ const Banner = () => {
                   PLAY GAMES
                 </p>
               </div>
-              <div
-                className="mb-5 md:mb-10"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
+              <div className="mb-5 md:mb-10">
                 <h1 className="text-5xl md:leading-normal xl:text-6xl italic text-primary font-extrabold mb-5 heading">
                   WIN REAL CASH
                 </h1>
