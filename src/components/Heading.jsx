@@ -8,7 +8,7 @@ const Heading = ({ children, className }) => {
     >
       <div className="hidden sm:inline-block w-10 sm:w-20 h-[2px] bg-gradient-to-r from-primary to-yellow-600" />
       <h2
-        className={` text-xl md:text-4xl font-semibold text-white text-center inline-block`}
+        className={` text-2xl md:text-4xl font-semibold text-white text-center inline-block`}
       >
         {children}
       </h2>

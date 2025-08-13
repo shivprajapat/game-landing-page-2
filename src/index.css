@@ -215,11 +215,11 @@ button {
   @apply bg-cover;
 }
 
-.marqueeOne__text-style1 {
+.marquee-text {
   transition-property: opacity, transform;
   font-style: normal;
   font-stretch: normal;
   font-optical-sizing: auto;
-  -webkit-text-stroke: 2.5px rgba(23, 25, 36, 0.85);
+  -webkit-text-stroke: 2.5px white;
   color: transparent;
 }

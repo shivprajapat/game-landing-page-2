@@ -22,21 +22,23 @@ const EnjoyGames = () => {
             </div>
           </Heading>
         </div>
-        <div className="flex flex-wrap justify-center mx-auto lg:w-full md:w-5/6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-3 md:gap-6">
           {enjoyGamesSliderData.map((item, index) => (
             <div
+              class="relative h-52 sm:h-72 md:h-80 bg-[#161926] group overflow-hidden"
               key={index}
-              className=" w-1/2 py-4 sm:py-7 text-center border lg:w-1/4 border-white group"
+              style={{
+                clipPath:
+                  "polygon(0px 0px, 92% 0px, 100% 15%, 100% 100%, 7% 100%, 0px 85%)",
+              }}
             >
-              <div className="block size-32 sm:size-56 mx-auto rounded-full object-cover border-2 border-primary p-2 shadow">
-                <img
-                  src={item.videoPoster}
-                  className="size-full group-hover:scale-110 transition-all duration-300 rounded-full"
-                />
-              </div>
-              <p className="pt-4 text-sm font-medium capitalize font-body text-primary lg:text-lg md:text-base md:pt-6">
-                portfolio
-              </p>
+              <span class="absolute bottom-0 scale-0 group-hover:scale-105 z-50 w-full h-10 flex items-center justify-center text-white font-medium text-sm bg-primary">
+                {item.text}
+              </span>
+              <img
+                src={item.videoPoster}
+                className="size-full rounded-xl object-cover group-hover:scale-110 transition-all duration-300"
+              />
             </div>
           ))}
         </div>

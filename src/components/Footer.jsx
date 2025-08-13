@@ -1,4 +1,4 @@
-import { iconAndroid, iconDownload, iconLogo } from "@/assets/images";
+import { iconLogo } from "@/assets/images";
 import { footerLinks, socialLinks } from "@/constants";
 import { useIsMobile } from "@/hooks/useIsMobile";
 import React, { useEffect, useState } from "react";
@@ -18,7 +18,7 @@ const Footer = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <footer className="my-4 md:my-9">
+    <footer className="my-4 pb-14 sm:mb-0 md:my-9">
       <div className="max-w-7xl mx-auto space-y-8 px-4 pb-10 sm:px-6 lg:space-y-16 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
@@ -93,8 +93,8 @@ const Footer = () => {
         </marquee>
       </div>
       <div className="max-w-7xl mx-4 xl:mx-auto">
-        <div className="flex items-center gap-2 justify-center text-center flex-wrap text-sm sm:text-base text-gray font-urbanist font-normal text-white">
-          <p className=" text-white">
+        <div className="flex items-center gap-2 justify-center text-center flex-wrap text-gray font-normal text-white">
+          <p className=" text-white text-sm sm:text-base">
             © {new Date().getFullYear()},
             <a
               href="https://ludoplayers.com"
@@ -109,16 +109,19 @@ const Footer = () => {
       </div>
       {isMobile && (
         <div
-          className={`fixed left-0 w-full px-4 z-50 duration-1000 transition-all ${
+          className={`fixed left-0 w-full z-50 duration-500 transition-all ${
             showDownloadButton
-              ? "bottom-6 translate-y-0"
+              ? "bottom-0 translate-y-0"
               : "-bottom-10 translate-y-full"
           }`}
         >
-          <button className="download__btn bg-primary text-black w-full rounded-md uppercase italic px-3 py-3 text-lg font-semibold flex-center gap-2 animate-bounce">
-            <img src={iconAndroid} alt="" width={24} height={24} />
+          <button
+            className=" bg-primary text-black w-fullrounded-md uppercase italic px-3 py-3 text-base font-semibold flex-center gap-2 w-full"
+            style={{ clipPath: "none" }}
+          >
+            {/* <img src={iconAndroid} alt="" width={24} height={24} /> */}
             <span> Get Download Link</span>
-            <img src={iconDownload} alt="" width={24} height={24} />
+            {/* <img src={iconDownload} alt="" width={24} height={24} /> */}
           </button>
         </div>
       )}

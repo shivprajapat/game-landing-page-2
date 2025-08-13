@@ -6,7 +6,7 @@ import Tilt from "@/components/Tilt";
 
 const Banner = () => {
   return (
-    <section id="home" className="pb-7 md:pb-10">
+    <section id="home" className="md:pb-10">
       <div className="max-w-7xl px-4 mx-auto">
         <div className="flex flex-col-reverse md:flex-row">
           <div className="flex-auto md:flex-1/2">
@@ -91,13 +91,13 @@ const Banner = () => {
                 </ul>
               </div>
             </div>
-            <div data-aos="fade-up" data-aos-duration="2000">
+            {/* <div data-aos="fade-up" data-aos-duration="2000">
               <img
                 src={ImageCertificate}
                 alt="certificate"
                 className="max-w-full rounded-md md:h-16 object-contain lg:h-20"
               />
-            </div>
+            </div> */}
           </div>
           <div
             className="h-full flex-auto md:flex-1/2 max-w-6xl mx-auto w-full"
@@ -114,6 +114,15 @@ const Banner = () => {
               />
             </Tilt>
           </div>
+        </div>
+      </div>
+      <div className="max-w-5xl px-4 mx-auto mt-16">
+        <div className="p-4 sm:p-7 bg-[#161926] shadow rounded-xl w-fit mx-auto">
+          <img
+            src={ImageCertificate}
+            alt=""
+            className="w-full h-28 object-contain"
+          />
         </div>
       </div>
     </section>
