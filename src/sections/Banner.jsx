@@ -36,10 +36,10 @@ const Banner = () => {
                   <li className="text-center flex items-center">
                     <div>
                       <span className="text-xs sm:text-lg font-bold text-primary block">
-                        80M+
+                        ₹25 Cr+{" "}
                       </span>
                       <span className="text-[10px] sm:text-base font-normal text-white">
-                        DOWNLOADS
+                        Daily Winnings
                       </span>
                     </div>
                     <svg
@@ -62,10 +62,10 @@ const Banner = () => {
                   <li className="text-center flex items-center">
                     <div>
                       <span className="text-xs sm:text-lg font-bold text-primary block">
-                        80M+
+                        Instant
                       </span>
                       <span className="text-[10px] sm:text-base font-normal text-white">
-                        DOWNLOADS
+                        Withdrawals{" "}
                       </span>
                     </div>
                     <svg
@@ -88,10 +88,10 @@ const Banner = () => {
                   <li className="text-center">
                     <div>
                       <span className="text-xs sm:text-lg font-bold text-primary block">
-                        80M+
+                        10 Cr+{" "}
                       </span>
                       <span className="text-[10px] sm:text-base font-normal text-white">
-                        DOWNLOADS
+                        Real Players
                       </span>
                     </div>
                   </li>
