@@ -9,7 +9,7 @@ const FAQ = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <section className="py-7 md:py-10" id="faq">
+    <section className="py-7 pb-0 sm:pb-10 md:py-10" id="faq">
       <div data-aos="fade-up">
         <Heading className="justify-center">FAQ's About Chess Game</Heading>
       </div>

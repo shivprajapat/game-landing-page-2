@@ -1,10 +1,8 @@
 import { Heading } from "@/components";
 import { enjoyGamesSliderData } from "@/constants";
-import React, { useState } from "react";
+import React from "react";
 
 const EnjoyGames = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-
   return (
     <section className="py-8 md:py-12 relative">
       <div className="max-w-6xl px-4 mx-auto">
@@ -36,18 +34,11 @@ const EnjoyGames = () => {
                 clipPath:
                   "polygon(0px 0px, 92% 0px, 100% 15%, 100% 100%, 7% 100%, 0px 85%)",
               }}
-              onMouseEnter={() => setActiveIndex(index)}
-              onMouseLeave={() => setActiveIndex(null)}
             >
               {/* Animated overlay text */}
               <span
                 className={`absolute bottom-0 z-50 w-full py-4 px-2 sm:py-6 flex items-center justify-center text-black font-medium text-sm sm:text-base bg-primary transform transition-all duration-300 ease-in-out
-                  ${
-                    activeIndex === index
-                      ? "translate-y-0 opacity-100"
-                      : "translate-y-full opacity-0"
-                  }
-                `}
+                  translate-y-0 `}
               >
                 {item.text}
               </span>

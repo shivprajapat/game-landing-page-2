@@ -1,40 +1,48 @@
 import { iconLeftArrow, iconRightArrow } from "@/assets/images";
 import { Heading } from "@/components";
 import { howToInstallData } from "@/constants";
-import { useSlider } from "@/hooks/useSlider";
-import React from "react";
+import React, { useCallback, useRef } from "react";
 import Slider from "react-slick";
 
 const InstallApp = () => {
-  const responsiveBreakpoints = [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        infinite: true,
-      },
-    },
-    {
-      breakpoint: 850,
-      settings: {
-        slidesToShow: 2,
-        initialSlide: 2,
-      },
-    },
-    {
-      breakpoint: 576,
-      settings: {
-        slidesToShow: 1,
-        margin: 5,
-      },
-    },
-  ];
+  const sliderRef = useRef(null);
 
-  const { sliderRef, settings, handlePrevClick, handleNextClick } = useSlider({
-    slidesToShow: 4,
+  const handlePrevClick = useCallback(() => {
+    if (sliderRef.current && sliderRef.current.slickPrev) {
+      sliderRef.current.slickPrev();
+    }
+  }, []);
+
+  const handleNextClick = useCallback(() => {
+    if (sliderRef.current && sliderRef.current.slickNext) {
+      sliderRef.current.slickNext();
+    }
+  }, []);
+  const settings = {
+    focusOnSelect: true,
+    infinite: true,
+    slidesToShow: 3,
     slidesToScroll: 1,
-    responsive: responsiveBreakpoints,
-  });
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 500,
+    arrows: false,
+    dots: false,
+    waitForAnimate: false,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: { slidesToShow: 3 },
+      },
+      { breakpoint: 768, settings: { slidesToShow: 2 } },
+      {
+        breakpoint: 576,
+        settings: { slidesToShow: 1, centerPadding: "70px" },
+      },
+    ],
+  };
+
   return (
     <section className="max-w-5xl mx-auto px-4 py-5 md:py-8" id="install">
       <div className="p-4 md:p-6 rounded-xl lg:p-10 gradient-bg border border-slate-700">
