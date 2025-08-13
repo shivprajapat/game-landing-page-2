@@ -14,10 +14,17 @@ const AccordionItem = ({ title, content, isOpen, onClick }) => {
   }, [isOpen]);
 
   return (
-    <div className="overflow-hidden">
+    <div
+      className="overflow-hidden"
+      style={{
+        clipPath:
+          "polygon(0px 0px, 98% 0px, 100% 12%, 100% 100%, 2% 100%, 0px 87%)",
+      }}
+    >
       <button
         onClick={onClick}
         className="w-full text-left px-4 py-3 sm:py-4 bg-primary flex justify-between items-center transition-colors"
+        style={{ clipPath: "none" }}
       >
         <span className="font-normal text-black text-base sm:text-lg">
           {title}

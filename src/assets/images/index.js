@@ -22,8 +22,13 @@ import iconCirclePlus from "./icons/plus-circle.svg";
 import iconCircleDash from "./icons/dash-circle.svg";
 import iconAndroid from "./icons/android.png";
 import iconDownload from "./icons/download.webp";
+import iconAIGF from "./icons/AIGF.png";
+import iconCertified from "./icons/Certified.png";
+import iconInstant from "./icons/Instant.png";
+import iconISO from "./icons/ISO.png";
 
 export {
+  iconAIGF,iconCertified,iconInstant,iconISO,
   iconClose,
   iconMenu,
   iconLogo,

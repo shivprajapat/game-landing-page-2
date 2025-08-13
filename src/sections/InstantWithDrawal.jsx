@@ -6,7 +6,7 @@ const InstantWithDrawal = () => {
   return (
     <section className="py-5 md:py-8">
       <div className="max-w-5xl px-4 mx-auto">
-        <div className="p-7 bg-[#171926] border border-white">
+        <div className="p-7 gradient-bg border border-slate-700 rounded">
           <div data-aos="fade-up"></div>
           <Heading className="justify-center">Withdrawal Modes</Heading>
           <div data-aos="fade-up">

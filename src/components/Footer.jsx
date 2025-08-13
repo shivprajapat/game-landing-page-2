@@ -62,7 +62,7 @@ const Footer = () => {
                   {section.links.map((link, index) => (
                     <li key={index}>
                       <a
-                        className="hover:text-yellow-500 font-extralight transition-all duration-150"
+                        className="hover:text-primary font-extralight transition-all duration-150"
                         href={link.href}
                         target={link.target || "_self"}
                       >

@@ -223,3 +223,13 @@ button {
   -webkit-text-stroke: 2.5px white;
   color: transparent;
 }
+
+.gradient-bg {
+  background-image: -webkit-linear-gradient(
+    90deg,
+    #0c0e12 0%,
+    rgba(31, 41, 53, 0.36078) 100%
+  );
+  /* border: 1px solid rgba(76, 76, 76, 0.2); */
+  @apply bg-[#161926];
+}

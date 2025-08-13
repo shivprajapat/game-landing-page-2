@@ -78,9 +78,6 @@ const Header = () => {
           </ul>
           <div className="flex gap-3 flex-1 lg:flex-none justify-end items-center">
             <div className="flex items-center gap-2 sm:gap-3">
-              <div className="sm:inline-block hidden">
-                <Button>Download</Button>
-              </div>
               <a href="https://ludoplayers.com/login" target="_blank">
                 <Button>Login</Button>
               </a>

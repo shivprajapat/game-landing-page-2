@@ -1,8 +1,15 @@
-import { ImageCertificate } from "@/assets/images";
+import {
+  iconISO,
+  iconCertified,
+  iconInstant,
+  iconAIGF,
+  iconDownload,
+} from "@/assets/images";
 import Typewriter from "typewriter-effect";
 import React from "react";
 import { tiltOption } from "@/constants/tiltOption";
 import Tilt from "@/components/Tilt";
+import { Button } from "@/components";
 
 const Banner = () => {
   return (
@@ -10,7 +17,7 @@ const Banner = () => {
       <div className="max-w-7xl px-4 mx-auto">
         <div className="flex flex-col-reverse md:flex-row">
           <div className="flex-auto md:flex-1/2">
-            <div className="mt-8 mb-6 md:mt-0 md:mb-8">
+            <div className="mt-8 md:mt-0">
               <div
                 className="bg-black border border-primary shadow px-4 py-2 w-fit rounded-full p-[1px] mb-5"
                 data-aos="fade-up"
@@ -90,14 +97,39 @@ const Banner = () => {
                   </li>
                 </ul>
               </div>
+              <div className=" mt-10">
+                <Button className="px-5 py-2.5 sm:px-7 sm:py-4 flex items-center gap-2">
+                  <img
+                    src={iconDownload}
+                    className="brightness-0 size-7"
+                    alt=""
+                  />
+                  Download App
+                </Button>
+              </div>
+              <div className="w-fit shadow rounded-xl grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-5 mt-10">
+                <img
+                  src={iconAIGF}
+                  alt=""
+                  className="size-full md:size-36 p-3 rounded gradient-bg object-contain"
+                />
+                <img
+                  src={iconCertified}
+                  alt=""
+                  className="size-full md:size-36 p-3 rounded gradient-bg object-contain"
+                />
+                <img
+                  src={iconInstant}
+                  alt=""
+                  className="size-full md:size-36 p-3 rounded gradient-bg object-contain"
+                />
+                <img
+                  src={iconISO}
+                  alt=""
+                  className="size-full md:size-36 p-3 rounded gradient-bg object-contain"
+                />
+              </div>
             </div>
-            {/* <div data-aos="fade-up" data-aos-duration="2000">
-              <img
-                src={ImageCertificate}
-                alt="certificate"
-                className="max-w-full rounded-md md:h-16 object-contain lg:h-20"
-              />
-            </div> */}
           </div>
           <div
             className="h-full flex-auto md:flex-1/2 max-w-6xl mx-auto w-full"
@@ -114,15 +146,6 @@ const Banner = () => {
               />
             </Tilt>
           </div>
-        </div>
-      </div>
-      <div className="max-w-5xl px-4 mx-auto mt-16">
-        <div className="p-4 sm:p-7 bg-[#161926] shadow rounded-xl w-fit mx-auto">
-          <img
-            src={ImageCertificate}
-            alt=""
-            className="w-full h-28 object-contain"
-          />
         </div>
       </div>
     </section>
