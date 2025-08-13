@@ -45,7 +45,7 @@ const Header = () => {
               }`}
             />
           </a>
-          <ul className="list-none transition-all duration-200 gap-5 lg:gap-10 xl:gap-14 lg:flex hidden justify-end items-center">
+          <ul className="list-none transition-all duration-200 gap-5 lg:gap-10 xl:gap-14 md:flex hidden justify-end items-center">
             {navLinks.map((nav) => (
               <li
                 key={nav.id}
@@ -76,7 +76,7 @@ const Header = () => {
               </li>
             ))}
           </ul>
-          <div className="flex gap-3 flex-1 lg:flex-none justify-end items-center">
+          <div className="flex gap-3 flex-1 md:flex-none justify-end items-center">
             <div className="flex items-center gap-2 sm:gap-3">
               <a href="https://ludoplayers.com/login" target="_blank">
                 <Button>Login</Button>

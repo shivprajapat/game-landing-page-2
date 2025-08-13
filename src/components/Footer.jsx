@@ -18,7 +18,7 @@ const Footer = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <footer className="my-4 pb-14 sm:mb-0 md:my-9">
+    <footer className="my-4 pb-14 md:pb-0 sm:mb-0 md:my-9">
       <div className="max-w-7xl mx-auto space-y-8 px-4 pb-10 sm:px-6 lg:space-y-16 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>

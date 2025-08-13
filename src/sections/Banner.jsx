@@ -15,8 +15,8 @@ const Banner = () => {
   return (
     <section id="home" className="md:pb-10">
       <div className="max-w-7xl px-4 mx-auto">
-        <div className="flex flex-col-reverse md:flex-row">
-          <div className="flex-auto md:flex-1/2">
+        <div className="flex flex-col-reverse lg:flex-row">
+          <div className="flex-auto lg:flex-1/2">
             <div className="mt-8 md:mt-0">
               <div
                 className="bg-black border border-primary shadow px-4 py-2 w-fit rounded-full p-[1px] mb-5"
@@ -107,7 +107,7 @@ const Banner = () => {
                   Download App
                 </Button>
               </div>
-              <div className="w-fit shadow rounded-xl mx-3 sm:mx-0 grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-5 mt-10">
+              <div className="w-fit shadow rounded-xl mx-3 sm:mx-0 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 mt-10">
                 <img
                   src={iconAIGF}
                   alt=""
@@ -142,7 +142,7 @@ const Banner = () => {
                 alt="banner"
                 // width={438}
                 // height={350}
-                className="ml-auto md:h-80 lg:h-96 xl:h-[550px] object-contain"
+                className="lg:ml-auto lg:h-[550px] object-contain"
               />
             </Tilt>
           </div>
