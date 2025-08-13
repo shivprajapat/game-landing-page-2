@@ -3,7 +3,7 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #a6d719;
+  --color-primary: #ffc107;
   --font-poppins: "Poppins", sans-serif;
 }
 .text-gray {
@@ -36,7 +36,7 @@ html {
   }
 }
 .heading {
-  background: #a6d719;
+  background: #ffc107;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
