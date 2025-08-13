@@ -39,7 +39,7 @@ const About = () => {
           <div data-aos="zoom-in-up">
             <Tilt className="box" options={tiltOption}>
               <img
-                src="https://demos.codexcoder.com/themeforest/html/casina/casina/assets/images/faq/01.png"
+                src="https://demos.codexcoder.com/themeforest/html/casina/casina/assets/images/game/08.png"
                 alt="about"
               />
             </Tilt>

@@ -36,8 +36,8 @@ const InstallApp = () => {
     responsive: responsiveBreakpoints,
   });
   return (
-    <section className="py-5 md:py-8" id="install">
-      <div className="max-w-5xl mx-auto p-4 md:p-6 rounded-xl lg:p-10 gradient-bg border border-slate-700">
+    <section className="max-w-5xl mx-auto px-4 py-5 md:py-8" id="install">
+      <div className="p-4 md:p-6 rounded-xl lg:p-10 gradient-bg border border-slate-700">
         <div data-aos="fade-up">
           <Heading className="justify-center">How To Install</Heading>
         </div>

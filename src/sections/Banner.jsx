@@ -107,7 +107,7 @@ const Banner = () => {
                   Download App
                 </Button>
               </div>
-              <div className="w-fit shadow rounded-xl grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-5 mt-10">
+              <div className="w-fit shadow rounded-xl mx-3 sm:mx-0 grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-5 mt-10">
                 <img
                   src={iconAIGF}
                   alt=""
